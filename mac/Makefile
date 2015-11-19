@@ -3,7 +3,7 @@ all: k811fn
 CC=gcc
 CXX=g++
 COBJS=hid.o
-CPPOBJS=../k811fn.o
+CPPOBJS=k811fn.o
 OBJS=$(COBJS) $(CPPOBJS)
 CFLAGS+=-I../include/ -Wall -g -c
 LIBS=-framework IOKit -framework CoreFoundation
